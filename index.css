@@ -1,0 +1,112 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .actions button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions button:hover, .actions button:focus {
+    background-color: #555;
+    outline: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .card {
+    height: 180px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+  }
+  
+  .card .back {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes shuffle {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  

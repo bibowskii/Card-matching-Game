@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/racoon.png",
+        "name": "racoon"
+    },
+    {
+        "image": "../assets/cat.png",
+        "name": "cat"
+    },
+    {
+        "image": "../assets/bee.png",
+        "name": "bee"
+    },
+    {
+        "image": "../assets/elephant.png",
+        "name": "elephant"
+    },
+    {
+        "image": "../assets/bear.png",
+        "name": "bear"
+    },
+    {
+        "image": "../assets/panda.png",
+        "name": "panda"
+    },
+    {
+        "image": "../assets/turtle.png",
+        "name": "turtle"
+    },
+    {
+        "image": "../assets/flamingo.png",
+        "name": "flamingo"
+    },
+    {
+        "image": "../assets/sloth.png",
+        "name": "sloth"
+    }
+]
